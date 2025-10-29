@@ -1,0 +1,31 @@
+/* ---------- Villa & Teal — About page fixes ---------- */
+
+/* Base rhythm & smoothing */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Container */
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 22px; }
+
+/* Top bar */
+.vt-topbar { position: sticky; top:0; z-index: 10; background: #ffffffcc; backdrop-filter: blur(6px); border-bottom: 1px solid #eef3f2; }
+.vt-topbar .wrap { display:flex; align-items:center; justify-content: space-between; height: 64px; }
+.brand { display:flex; align-items:center; gap: 10px; text-decoration:none; color:#222; }
+.brand .emblem { width:34px; height:34px; display:grid; place-items:center; border:2px solid var(--teal,#81D8D0); border-radius:50%; font-weight:700; color:var(--teal,#81D8D0); }
+.brand .wordmark { letter-spacing:.08em; font-weight:700; font-size:14px; }
+.nav a { color:#222; text-decoration:none; margin-left:16px; opacity:.8; }
+.nav a:hover, .nav a.active { opacity:1; color:#111; }
+@media (max-width:680px){ .nav a{ margin-left:12px; font-size:14px } .brand .wordmark{ display:none }}
+
+/* Hero */
+.vt-hero { padding: 72px 0 40px; background: linear-gradient(180deg, rgba(129,216,208,0.35), rgba(129,216,208,0.12)); }
+.vt-hero h1 { font-size: clamp(32px, 6vw, 56px); margin: 0 0 10px; line-height: 1.05; }
+.vt-hero .lead { font-size: clamp(16px, 2.2vw, 20px); max-width: 60ch; opacity:.9; }
+
+/* Content section */
+.vt-section { padding: 42px 0 80px; }
+.vt-copy h2 { font-size: 22px; margin: 28px 0 8px; }
+.vt-copy p { font-size: 17px; line-height: 1.7; color:#283133; margin: 0 0 10px; max-width: 72ch; }
+
+/* Footer */
+.vt-footer { background: #f7faf9; border-top:1px solid #eef3f2; padding: 22px 0; color:#667; text-align:center; }
